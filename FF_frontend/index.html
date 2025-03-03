@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/null.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/modifiers.css">
+
+  <!-- Google fonts -->
+  <!-- Open sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+  <title>Main</title>
+</head>
+<body>
+<header class="flex justify-center">
+  <div class="flex flex-container align-center justify-between">
+    <div class="width_auto flex align-center">
+      <a href="" class="text-title color_white">FanFiction</a>
+    </div>
+
+    <div class="menu width_auto flex justify-between max_480">
+      <a href="" class="text-body color_white">Main</a>
+      <a href="pages/category.html" class="text-body color_white">Category</a>
+    </div>
+
+    <img class="min_480" src="/icons/menu.svg" alt="menu">
+  </div>
+</header>
+
+<main class="flex align-center">
+  <div class="flex-container flex-column gap_20">
+
+    <h1>All fics</h1>
+
+    <div class="card-grid" data-card-wrapper=""></div>
+  </div>
+</main>
+
+<footer class="flex align-center justify-center max_480">
+  <div class="flex-container flex align-center justify-between">
+    <div class="flex-column width_auto">
+      <div class="width_auto flex align-center">
+        <a href="" class="text-title color_white">FanFiction</a>
+      </div>
+
+      <p class="text-body color_white">© 2025, All rights reserved</p>
+    </div>
+
+    <div class="menu width_auto flex justify-between">
+      <a href="" class="text-body color_white">Main</a>
+      <a href="pages/category.html" class="text-body color_white">Category</a>
+    </div>
+  </div>
+</footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/api.js"></script>
+<script>generateArticles()</script>
+</html>

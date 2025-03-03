@@ -1,0 +1,192 @@
+/* Flex */
+.flex {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+
+.flex-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.flex-container {
+  width: 100%;
+  max-width: 1240px;
+  padding: 0 15px;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+
+.flex-5 {
+  flex: 5
+}
+
+.flex-4 {
+  flex: 4
+}
+
+.flex-3 {
+  flex: 3
+}
+
+.flex-2 {
+  flex: 2
+}
+
+.flex-1 {
+  flex: 1
+}
+
+.gap_60 {
+  gap: 60px;
+}
+
+.gap_30 {
+  gap: 30px;
+}
+
+.gap_20 {
+  gap: 20px;
+}
+
+.width_auto {
+  width: auto;
+}
+
+
+/* Margin */
+
+.mt_60 {
+  margin-top: 60px;
+}
+
+/* Media */
+
+.max_800 {
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+.min_800 {
+  @media (min-width: 801px) {
+    display: none;
+  }
+}
+
+
+.max_480 {
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+.min_480 {
+  @media (min-width: 481px) {
+    display: none;
+  }
+}
+
+
+/* Text */
+h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--primary);
+
+  @media (max-width: 480px) {
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    line-height: 100%;
+  }
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-semibold {
+  font-weight: 600;
+}
+
+.text-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gray_100);
+
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
+}
+
+.text-subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--gray_100);
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
+}
+
+.text-body {
+  font-size: 15px;
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
+}
+
+.text-strip {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.font-secondary {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Color */
+.color_primary {
+  color: var(--primary);
+}
+
+.color_white {
+  color: var(--white);
+}
